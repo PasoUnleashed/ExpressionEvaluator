@@ -24,7 +24,7 @@ public class ExpressionManager {
         try{
             exp.lhs = Float.parseFloat(split[0]);
         }catch(NumberFormatException nf){
-            throw new InvalidExpressionException("Expected a number, found \""+split[0]+"\"");
+            throw new InvalidExpressionException("LHS: Expected a number, found \""+split[0]+"\"");
         }
         // set the right hand side of the expression
         exp.lhs = Float.parseFloat(split[1]);

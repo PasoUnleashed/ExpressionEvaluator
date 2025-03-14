@@ -9,6 +9,10 @@ public class Expression {
     public String operator;
     // calculates the result of the expression
     public String evaluate(){
+        if(operator.equals("+")){
+            float sum = (lhs+rhs);
+            return Float.toString(sum);
+        }
         return "Evaluation not implemented";
     }
 }

@@ -20,9 +20,6 @@ public class EvaluatorWindow{
             public void actionPerformed(ActionEvent e) {
                 try{
                     Expression exp = ExpressionManager.parse(expressionText.getText());
-                    System.out.println(exp.rhs);
-                    System.out.println(exp.operator);
-                    System.out.println(exp.lhs);
                     outputLabel.setText(exp.evaluate() );
                 }catch (InvalidExpressionException ex){
                     outputLabel.setText(ex.getMessage());
@@ -35,7 +32,4 @@ public class EvaluatorWindow{
         });
     }
     
-    public void evaluate(){
-        
-    }
 }
